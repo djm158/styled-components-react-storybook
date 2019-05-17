@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+React + Typescript + Styled Components + Styled System + Rebass + Storybook
 
 ## Available Scripts
 
@@ -37,8 +38,16 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Storybook
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+$ npm run storybook
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Weird stuff
+
+* on linux, I've had to do `sudo bash` and then `npm start` or `npm run storybook`
+  to get HMR to work
+* TODO: upgrade to TS 3.5 when released
+* TODO: there is a bug caused by @types/styled-components having a react-native
+  dep that breaks storybook
